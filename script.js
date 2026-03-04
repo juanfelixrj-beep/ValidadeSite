@@ -11,7 +11,7 @@ const dt = luxon.DateTime
 const img = document.createElement("img")
 img.style.width = "250px"
 img.style.height = "250px"
-img.src = "./images/resenha.jpeg"
+img.src = "/images/resenha.jpeg"
 container.appendChild(img)
 
 function verificarData(dataISO){
@@ -37,7 +37,7 @@ verifyBTN.addEventListener("click", ()=>{
     if(date.value === ""){
         result.textContent = "Digita a data né fi"
         
-        img.src = "./images/calabreso.jpg"
+        img.src = "/images/calabreso.jpg"
         container.appendChild(img)
         return
     }
@@ -47,17 +47,17 @@ verifyBTN.addEventListener("click", ()=>{
     if(validade === "vencido"){
         result.textContent = "O produto esta vencido"
         alert("O produto esta vencido")
-        img.src = "./images/brutal.jpeg"
+        img.src = "/images/brutal.jpeg"
         container.appendChild(img)
     }else if(validade === "hoje"){
         result.textContent = "O produto vence hoje"
         alert("O produto vence hoje")
-        img.src = "./images/fim.jpeg"
+        img.src = "/images/fim.jpeg"
         container.appendChild(img)
     }else if(validade === "valido"){
         result.textContent = "O produto está valido"
         alert("O produto está valido")
-        img.src = "./images/visionario.jpeg"
+        img.src = "/images/visionario.jpeg"
         container.appendChild(img)
     }
 })
