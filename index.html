@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Validade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image"></div>
+        <div class="content">
+            <h1>Verificador de Validade</h1>
+            <h3>Data de Hoje: <span id="today"></span></h3>
+            <label for="data">Digite a data de validade do produto:</label>
+            <input type="date" id="data">
+            <button id="verify">Verificar Validade</button>
+            <p id="result">Digite a data no campo acima</p>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/luxon@3/build/global/luxon.min.js"></script>
+<script type="module" src="script.js"></script>
+</html>
