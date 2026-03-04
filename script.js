@@ -8,6 +8,13 @@ today.textContent = luxon.DateTime.now().toLocaleString(luxon.DateTime.DATE_MED)
 
 const dt = luxon.DateTime
 
+const warning = document.getElementById("warning")
+const enter = document.getElementById("enter")
+
+enter.addEventListener("click", () => {
+    warning.style.display = "none"
+})
+
 const img = document.createElement("img")
 img.style.width = "250px"
 img.style.height = "250px"
